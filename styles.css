@@ -1,0 +1,98 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #222222;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 0.15rem;
+}
+
+h1{
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+
+}
+
+/* Navbar Section */
+.navbar-container{
+    display: flex;
+    background-color: #434242;
+    justify-content: space-between;
+}
+
+#logo{
+    max-width: 100px;
+}
+
+.navbar, .brand, .navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.links{
+    text-decoration: none;
+    color: #F3EFE0;
+    font-size: 1rem;
+}
+
+.links:hover{
+    filter: brightness(110%);
+    transform: translateY(-5px);
+}
+
+/* Post Section */
+.post-container{
+    display: flex;
+    color: #f3efe0;
+    align-items: center;
+    justify-content: center;
+}
+
+#post-about{
+    text-align: center;
+    padding: 15% 10px;
+}
+
+.about-title{
+    position: relative;
+    right: 6rem;
+}
+
+.about-subtitle{
+    font-size: 1rem;
+}
+
+.about-title-fade-in{
+animation: fadeIn 5s;
+-webkit-animation: fadeIn 5s;
+-moz-animation: fadeIn 5s;
+-o-animation: fadeIn 5s;
+-ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+.about-subtitle-fade-in2{
+    opacity: 0;
+    animation: fadeIn2 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    }
+    
+    @keyframes fadeIn2{
+        0%{ opacity: 0;}
+        100%{ opacity: 1;}
+    }
