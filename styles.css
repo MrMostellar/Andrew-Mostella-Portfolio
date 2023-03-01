@@ -198,3 +198,18 @@ animation: fadeIn 5s;
         0%{ opacity: 0;}
         100%{ opacity: 1;}
     }
+
+    /* For tablet or smaller */
+    @media screen and (max-width: 600px){
+        .navbar, .brand, .navbar-links {
+            margin: .5rem;
+        }
+
+
+        .about-title, .about-subtitle{
+            right: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
