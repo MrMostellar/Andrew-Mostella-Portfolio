@@ -32,20 +32,29 @@
         
         </div>
 
-        <nav class="navbar" id="navbar">
+        <div class="navbar" id="navbar">
             
-            <div class="navbar-links"><a href="" class="links">Home</a></div>
-            <div class="navbar-links"><a href="#post-about" class="links">About</a></div>
-            <div class="navbar-links"><a href="#post-portfolio" class="links">Portfolio</a></div>
-            <div class="navbar-links"><a href="#post-contact" class="links">Contact</a></div>
-           
+            <div id="dropdown">
+                <div class="navbar-links dropdown-item"><a href="" class="links">Home</a></div>
+                <div class="navbar-links dropdown-item"><a href="#post-about" class="links">About</a></div>
+                <div class="navbar-links dropdown-item"><a href="#post-portfolio" class="links">Portfolio</a></div>
+                <div class="navbar-links dropdown-item"><a href="#post-contact" class="links">Contact</a></div>
+            </div>
+            <!-- create a button that will replace the navbar menu at a certain screen size -->
+            <button id="dropdown-btn">
+               <hr class="btn-style">
+               <hr class="btn-style">
+               <hr class="btn-style">
+            </button>
+
             <!-- Rounded switch -->
             <div class="navbar-switch">
 
-                <span id="mode-icon"><i class="fa-solid fa-sun"></i></span>
+                <span class="switch-item" id="mode-title">Light Mode</span>
+                <span class="switch-item" id="mode-icon"><i class="fa-solid fa-sun"></i></span>
 
-                <label class="switch">
-
+                <label class="switch switch-item">
+                
                     <input id="mode-toggle" type="checkbox">
                     <span class="slider round"></span>
 
@@ -53,7 +62,7 @@
 
             </div>
 
-        </nav>
+        </div>
 
     </section>
 

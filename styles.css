@@ -22,7 +22,6 @@
 
 .navbar-switch{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -91,6 +90,10 @@
     border-radius: 50%;
   }
 
+  .switch-item{
+    margin: 10px;
+  }
+
 /* Elements */
 html{
     box-sizing: border-box;
@@ -107,6 +110,10 @@ body{
     color: var(--on-background);
 }
 
+body div{
+    flex-wrap: wrap;
+}
+
 h1{
     font-family: 'Cinzel', serif;
     font-size: 3rem;
@@ -115,16 +122,17 @@ h1{
 
 /* Navbar Section */
 .navbar-container{
-    display: flex;
+    display: flex; 
     background-color: var(--primary-variant);
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo{
     max-width: 100px;
 }
 
-.navbar, .brand, .navbar-links {
+.navbar, .brand, #dropdown, .navbar-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +147,21 @@ h1{
 
 .links:hover{
     filter: brightness(110%);
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+}
+
+/* dropdown menu */
+
+#dropdown-btn{
+    border-radius: 10%;
+    background-color: var(--on-primary);
+    margin: 10px;
+}
+
+.btn-style{
+    min-width: 20px;
+    margin: 10px;
+    color: var(--background)
 }
 
 /* Post Section */
@@ -200,16 +222,37 @@ animation: fadeIn 5s;
     }
 
     /* For tablet or smaller */
-    @media screen and (max-width: 600px){
-        .navbar, .brand, .navbar-links {
-            margin: .5rem;
+    @media screen and (max-width: 800px) and (min-width: 340px) {
+        
+        h1{
+            font-size: 1.5rem;
         }
 
-
-        .about-title, .about-subtitle{
+        .about-title{
             right: 0;
             justify-content: center;
             align-items: center;
+        }
+
+        .about-subtitle, .links, #mode-title{
+            font-size: .75rem;
+            font-weight: bold;
+        }
+        
+        .navbar, .brand, .navbar-links {
+            margin: auto, 10px;
+        }
+        .navbar-container{
+            justify-content: center;
+        }
+
+        #logo{
+            max-width: 3.5rem;
+        }
+
+        .navbar-switch{
+            display: flex;
+            justify-content: center;
         }
 
     }
