@@ -24,41 +24,74 @@
 <body>
     
     <!-- Navbar Section -->
-    <div class="navbar-container" id="navbar-container">
+    <section class="navbar-container" id="navbar-container">
         
         <div class="brand" id="brand">
-            <img src="Andrew-Mostella-Portfolio/images/Logo.png" alt="Andrew Mostella web dev logo" id="logo">
+
+            <img src="images/Logo.png" alt="Andrew Mostella web dev logo" id="logo">
+        
         </div>
 
         <nav class="navbar" id="navbar">
+            
             <div class="navbar-links"><a href="" class="links">Home</a></div>
             <div class="navbar-links"><a href="#post-about" class="links">About</a></div>
             <div class="navbar-links"><a href="#post-portfolio" class="links">Portfolio</a></div>
             <div class="navbar-links"><a href="#post-contact" class="links">Contact</a></div>
+           
+            <!-- Rounded switch -->
+            <div class="navbar-switch">
+
+                <span id="mode-icon"><i class="fa-solid fa-sun"></i></span>
+
+                <label class="switch">
+
+                    <input id="mode-toggle" type="checkbox">
+                    <span class="slider round"></span>
+
+                </label>
+
+            </div>
+
         </nav>
 
-    </div>
+    </section>
 
-    <!-- Post Section -->
-    <div class="post-container" id="post-container">
+    <!-- About Section -->
+    <section class="post-container">
         
-        <div class="post-content" id="post-about">
+        <div id="post-about">
+
             <h1 class="about-title about-title-fade-in" id="about-title">Hi, I'm Andrew</h1>
             <h3 class="about-subtitle about-subtitle-fade-in2" id="about-subtitle">a front-end web developer</h3>
+            <p class="about-content"></p>
+
         </div>
+
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="post-container">
 
         <div class="post-content" id="post-portfolio">
             
+           
+
         </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="post-container">
 
         <div class="post-content" id="post-contact">
+
+
             
         </div>
-    
-    </div>
 
-    
-    
+    </section>
+
     <!----Script---->
     <script src="script.js"></script>
 
