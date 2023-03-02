@@ -259,37 +259,10 @@ animation: fadeIn 5s;
             justify-content: center;
         }
 
-        #dropdown-btn{
-            border-radius: 10%;
-            background-color: var(--on-primary);
-            margin: 10px;
-            border: none;
-            display: inline;
-       }
-       
-       #dropdown-btn:hover{
-        background-color: var(--on-background-alt);
-       }
-
-       #dropdown{
-        display: inline-block;
-        position: relative;
-       }
-
-       #dropdown:hover{
-        background-color: var(--on-background-alt);
-       }
-
-       .navbar-links{
-        display: none;
-        position: absolute;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-       }
-
-       .show{
-        display: block;
+       #dropdown a{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
        }
 
     }
