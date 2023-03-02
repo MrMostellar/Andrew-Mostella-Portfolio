@@ -36,36 +36,39 @@
             
             <div id="dropdown">
 
-                <a href="" class="navbar-links links">Home</a>
-                <a href="#post-about" class="navbar-links links">About</a>
-                <a href="#post-portfolio" class="navbar-links links">Portfolio</a>
-                <a href="#post-contact" class="navbar-links links">Contact</a>
+                <a href="" class="navbar-links">Home</a>
+                <a href="#post-about" class="navbar-links">About</a>
+                <a href="#post-portfolio" class="navbar-links">Portfolio</a>
+                <a href="#post-contact" class="navbar-links">Contact</a>
+
+                <!-- create a button that will replace the navbar menu at a certain screen size -->
+                <!-- <button id="dropdown-btn">
+
+                    <hr class="btn-style">
+                    <hr class="btn-style">
+                    <hr class="btn-style">
+                    
+                </button> -->
 
             </div>
 
             <!-- Rounded switch -->
-            <div class="navbar-switch">
+            <div id="theme-toggle">
 
-                <span class="switch-item" id="mode-title" title="Set to Dark Theme">Light Mode</span>
-                <span class="switch-item" id="mode-icon"><i class='fa-solid fa-sun'></i></span>
+                <span class="switch-item" id="mode-title">Light Theme</span>
+                    
+                <div id="toggle-bottom-row">  
 
-                <label class="switch switch-item">
+                    <label class="switch toggle-items">
+                    
+                        <input id="mode-toggle" type="checkbox">
+                        <span class="slider round" title="Set to Dark Theme"></span>
+
+                    </label>
                 
-                    <input id="mode-toggle" type="checkbox">
-                    <span class="slider round"></span>
-
-                </label>
+                </div>
 
             </div>
-
-            <!-- create a button that will replace the navbar menu at a certain screen size -->
-            <!-- <button id="dropdown-btn">
-
-                <hr class="btn-style">
-                <hr class="btn-style">
-                <hr class="btn-style">
-                
-            </button> -->
 
         </div>
 

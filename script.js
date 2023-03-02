@@ -6,12 +6,12 @@ toggle.addEventListener("change", function(event) {
     
     if(event.target.checked){
         document.documentElement.setAttribute("data-theme", "dark");
-        document.getElementById("mode-icon").innerHTML = '<i class="fa-solid fa-moon"></i>';
-        document.getElementById("mode-title").innerHTML = '<span class="switch-item" id="mode-title"title="Set to Light Theme">Dark Theme</span>';
+        document.getElementById("mode-title").innerHTML = '<span class="switch-item" id="mode-title">Dark Theme</span>';
+        document.getElementById("toggle").innerHTML = '<span class="slider round" title="Set to Light Theme"></span>';
     } else {
         document.documentElement.setAttribute("data-theme", "light");
-        document.getElementById("mode-icon").innerHTML= '<i class="fa-solid fa-sun"></i>';
-        document.getElementById("mode-title").innerHTML = '<span class="switch-item" id="mode-title" title="Set to Dark Theme">Light Theme</span>';
+        document.getElementById("mode-title").innerHTML = '<span class="switch-item" id="mode-title">Light Theme</span>';
+        document.getElementById("toggle").innerHTML = '<span class="slider round" title="Set to Dark Theme"></span>';
     }
 });
 //grab variables for the element and its' uses
