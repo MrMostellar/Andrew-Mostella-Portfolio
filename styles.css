@@ -5,8 +5,8 @@
     --secondary-color: #DE541E;
     --on-primary: #333333;
     --on-background: #333333;
-    --on-background-alt: #434240d8;
-    --background: #DCD6F7;
+    --on-background-alt: #dcd6f7b6;
+    --background: #ccccccb3;
     --box-shadow: 0 5px 20px 1px rgba(0,0,0,0.5);
 }
 
@@ -17,7 +17,7 @@
     --secondary-color: #42C2FF;
     --on-primary: #DCD6F7;
     --on-background: #DCD6F7;
-    --on-background-alt: #dcd6f7db;
+    --on-background-alt: #03040262;
     --background: #030402;
 }
 
@@ -107,6 +107,7 @@ body{
 }
 
 body div{
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -118,6 +119,9 @@ h1{
 
 /* Navbar Section */
 .navbar-container{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     display: flex; 
     background-color: var(--primary-variant);
     justify-content: space-between;
@@ -175,31 +179,30 @@ h1{
     border-color: var(--background);
 }
 
-/* Post Section */
-.post-container{
+/* Front Page Intro */
+.intro{
     display: flex;
+    flex-direction: column;
     color: var(--on-background);
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
-.post-content{
-    display: flex;
-}
-
-#post-about{
+.intro, #intro{
+    flex-direction: column;
     text-align: center;
-    padding: 15% 10px;
+    padding: 10px;
 }
 
-/* Front Page Intro */
 .about-title{
     position: relative;
-    right: 6rem;
+    right: 5rem;
 }
 
 .about-subtitle{
     font-size: 1rem;
+    
 }
 
 /* Animations */
@@ -225,27 +228,45 @@ animation: fadeIn 5s;
     -ms-animation: fadeIn 5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    }
+}
     
-    @keyframes fadeIn2{
-        0%{ opacity: 0;}
-        100%{ opacity: 1;}
-    }
+@keyframes fadeIn2{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+/* Post Section */
+.post-container{
+    display: flex;
+    flex-direction: column;
+    color: var(--on-background);
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 5%;
+    background-color: var(--on-background-alt);
+    box-shadow: 0 5px 6px 2px var(--box-shadow);
+}
+
+.post-container .content{
+    margin: 10px 50px;
+}
+
 
     /* For tablet or smaller */
     @media screen and (max-width: 800px) {
-        
-        h1{
-            font-size: 1.5rem;
-        }
 
         .about-title{
+            font-size: 1.5rem;
             right: 0;
             justify-content: center;
             align-items: center;
         }
 
-        .about-subtitle, .links, #mode-title{
+        .about-subtitle, .links, #mode-title, .post-content{
             font-size: .75rem;
             font-weight: bold;
         }
@@ -270,6 +291,10 @@ animation: fadeIn 5s;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+       }
+
+       .post-container{
+        margin: 10px;
        }
 
     }
